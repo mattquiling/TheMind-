@@ -90,9 +90,12 @@ This repository includes `render.yaml` for one-click setup.
 2. In Render, create a new Blueprint from your GitHub repo.
 3. Render will create `themind-server` using `render.yaml`.
 4. After deploy, copy the backend URL, for example:
-  - `https://themind-server.onrender.com`
+
+- `https://themind-server.onrender.com`
+
 5. Verify health endpoint:
-  - `https://themind-server.onrender.com/health`
+
+- `https://themind-server.onrender.com/health`
 
 ### 2) Deploy Frontend (Netlify)
 
@@ -101,8 +104,10 @@ This repository includes `netlify.toml` configured for the client app.
 1. In Netlify, import your GitHub repo.
 2. Keep default build settings from `netlify.toml`.
 3. Add environment variable in Netlify site settings:
-  - Key: `VITE_SERVER_URL`
-  - Value: your Render backend URL (for example `https://themind-server.onrender.com`)
+
+- Key: `VITE_SERVER_URL`
+- Value: your Render backend URL (for example `https://themind-server.onrender.com`)
+
 4. Deploy site.
 
 ### 3) Test With Friends
