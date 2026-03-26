@@ -384,5 +384,5 @@ function normalizeName(value) {
 
 const PORT = process.env.PORT || 4000;
 httpServer.listen(PORT, () => {
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  console.log(`The Mind server running on ${PORT}`);
 });
